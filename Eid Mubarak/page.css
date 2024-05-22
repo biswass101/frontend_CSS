@@ -1,0 +1,243 @@
+h1 {
+    display: inline-block;
+    font-size: 150px;
+}
+
+.m {
+    margin-left: 10px;
+}
+
+.e {
+    animation: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: blue;
+}
+
+.i {
+    animation: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: rgb(47, 47, 240);
+}
+
+.d {
+    animation: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: rgb(92, 92, 242);
+}
+
+.m {
+    animation: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: rgb(229, 54, 54);
+}
+
+.u {
+    animation: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: rgb(196, 99, 99);
+}
+
+.b {
+    animation: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: green;
+}
+
+.a {
+    animation: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: rgb(92, 192, 92);
+}
+
+.r {
+    animation: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: rgb(174, 202, 174);
+}
+
+.k {
+    animation: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: black;
+}
+
+.money-container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.mes {
+    font-size: 25px;
+}
+
+.taka {
+    height: 200px;
+    width: 500px;
+}
+
+
+@media(max-width: 480px) {
+    h1 {
+        display: inline-block;
+        font-size: 20px;
+    }
+    .e {
+        animation: slide1;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        color: blue;
+    }
+
+    .i {
+        animation: slide1;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        color: rgb(47, 47, 240);
+    }
+
+    .d {
+        animation: slide1;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        color: rgb(92, 92, 242);
+    }
+
+    .m {
+        animation: slide1;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        color: rgb(229, 54, 54);
+    }
+
+    .u {
+        animation: slide1;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        color: rgb(196, 99, 99);
+    }
+
+    .b {
+        animation: slide1;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        color: green;
+    }
+
+    .a {
+        animation: slide1;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        color: rgb(92, 192, 92);
+    }
+
+    .r {
+        animation: slide1;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        color: rgb(174, 202, 174);
+    }
+
+    .k {
+        animation: slide1;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        color: black;
+    }
+    .money-container {
+        margin-top: 200px;
+    }
+    
+    .mes {
+        text-align: left;
+        font-size: 30px;
+    }
+    
+    .taka {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+
+@keyframes slide1 {
+    0% {
+        transform: translate(0px);
+    }
+
+    100% {
+        transform: translateY(100px);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0px);
+    }
+
+    100% {
+        transform: translate(200px, 200px);
+    }
+}

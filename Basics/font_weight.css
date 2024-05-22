@@ -1,0 +1,16 @@
+/* Lightness and darkness of a text */
+/* font-weight values --> normal/ bold/ bolder/ lighter */
+/* font-weight more values --> 100 to 900 */
+
+#one
+{
+    font-weight: normal;
+}
+#tow
+{
+    font-weight: bold;
+}
+#three
+{
+    font-weight: lighter;
+}

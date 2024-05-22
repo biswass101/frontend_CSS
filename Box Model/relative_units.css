@@ -1,0 +1,22 @@
+/* Relative units--> %, em, rem */
+/* 
+
+% --> It is often used to define a size as relative to an element's parent objet
+
+
+*/
+
+#box1
+{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+#box2 
+{
+    height: 50px;
+    /* width: 50px; */
+    width: 30%;
+    background-color: yellow;
+}

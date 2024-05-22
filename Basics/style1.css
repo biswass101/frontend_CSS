@@ -1,0 +1,24 @@
+h1
+{
+    color: red;
+}
+p
+{
+    color: rgb(28, 223, 28);
+}
+button
+{
+    color: brown;
+    background-color: white;
+}
+/* color is forground property */
+/* background-color is background property */
+body
+{
+    /* background-color: rgba(200, 200, 17, 0.865); */
+    background-color: #ffff00;
+}
+
+/* color system */
+/* rgb(r, g, b) */
+/* #ff0000  here ff->r(255), 00 -> g(0), 00 ->b(0) */

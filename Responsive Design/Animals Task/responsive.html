@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 2px solid red;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            background-color: red;
+            width: 100%;
+        }
+        .image-container
+        {
+            display: flex;
+        }
+        .image-container div
+        {
+            width: 50%;
+        }
+        .image-container img
+        {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px)
+        {
+            .image-container
+            {
+                flex-direction: column;
+            }
+            .image-container div
+            {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+   
+    <h1>This is responsive page</h1>
+    <header>
+        <ul>
+            <li>Viewport meta tage</li>
+            <li>CSS Relative Unit</li>
+            <li>Body max width and horizontal center align</li>
+            <li>Image Fluid</li>
+            <li>two column flex and use media query with flex direction column</li>
+            <li>multi column: grid layout</li>
+            <li>menu responsive with js</li>
+        </ul>
+    </header>
+    <main>
+        <div class="image-container">
+            <div>
+                <img src="./MainAfter.webp" alt="">
+            </div>
+            <div>
+                <img src="./tiger.jpg" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

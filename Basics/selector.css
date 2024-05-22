@@ -1,0 +1,36 @@
+/* '*' is universal selector */
+*
+{
+    color:  green;
+}
+
+/* h1, p, div etc is callded element selector */
+h1
+{
+    color: red; 
+}
+button /*Last line will be hgher priority*/
+{
+    color: brown;
+}
+
+/* '#' is id selector for specific styling*/
+#hed1
+{
+    color: pink;
+}
+
+#hed2
+{
+    color: chocolate;
+}
+#hed3
+{
+    color: goldenrod
+}
+
+/* '.' is class selector for multiple styling */
+.my1
+{
+    color: magenta;
+}

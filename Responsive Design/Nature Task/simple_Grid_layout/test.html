@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Grid Area</title>
+    <style>
+        .header,
+        .nav,
+        .main,
+        .sidebar,
+        .advertise,
+        .footer {
+            border: 3px solid green;
+            background-color: tomato;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            gap: 10%;
+            align-items: center;
+            grid-area: head;
+        }
+
+        .nav {
+            grid-area: nav;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .sidebar {
+            grid-area: side;
+        }
+
+        .advertise {
+            grid-area: addv;
+        }
+
+        .footer {
+            grid-area: foot;
+        }
+
+        .container {
+            height: 96vh;
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+
+                /*"head head head head"
+                "nav    main   main   side"
+                "nav    main   main   addv"
+                "foot foot foot foot"*/
+                "head head head"
+                "nav nav nav"
+                "main main side"
+                "main main addv"
+                "main main foot"
+
+            ;
+
+        }
+
+        .logo-container {
+            width: 8rem;
+            height: 95%;
+            background-color: green;
+            border-radius: 50%;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .logo-container {
+                width: 3rem;
+                height: 100%;
+                background-color: green;
+                border-radius: 50%;
+            }
+
+            .logo-container img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+            .hotel-tiltle
+            {
+                font-size: 10px;
+            }
+            .log-button
+            {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header class="header">
+
+
+        <div class="logo-container">
+            <img class = "logo" src="./download.png" alt="hote-logo">
+        </div>
+
+        <div class="hotel-tiltle">
+            <h1>Nigga Hotel</h1>
+        </div>
+        <div class="user-section">
+            <div class="log-button">
+                <button>Login</button>
+                <button>Logout</button>
+            </div>
+        </div>
+
+    </header>
+    <nav class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article>
+            <h3>Main Article 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, inventore.</p>
+        </article>
+        <article>
+            <h3>Main Article 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, inventore.</p>
+        </article>
+    </main>
+    <div class="sidebar">
+        <h4>Sidebar</h4>
+    </div>
+    <div class="advertise">
+        <h4>Advertisement</h4>
+    </div>
+    <div class="footer">
+        <h4>Footer</h4>
+    </div>
+</body>
+
+</html>

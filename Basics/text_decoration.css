@@ -1,0 +1,24 @@
+/* text-decoration values --> underline / overline / line-through */
+h1
+{
+    text-align: center;
+    text-decoration: underline;
+}
+h2
+{
+    text-align: center;
+    text-decoration: overline;
+}
+h3
+{
+    text-align: center;
+    text-decoration: line-through;
+}
+a
+{
+
+    font-size: 300%;
+    color: red;
+    text-align: center;
+    text-decoration: none;
+}

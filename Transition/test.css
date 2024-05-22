@@ -1,0 +1,17 @@
+#box
+{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: steps(5);
+    transition-delay: 0s;
+}
+
+
+#box:hover
+{
+    background-color: green;
+    font-size: 30px;
+}

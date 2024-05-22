@@ -1,0 +1,26 @@
+div
+{
+    height: 100px;
+    width: 200px;
+    background-color: pink;
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: brown; */
+
+    /* shorthand for border */
+    border: 10px solid brown;
+}
+
+h1
+{
+    width: 200px;
+    height: 50px;
+    background-color: aquamarine;
+    /* border-width: 3px;
+    border-style: dotted;
+    border-color: yellow; */
+
+    /* Shorthand for border */
+    border: 3px dotted yellow;
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+.outer-bar
+{
+    height: 20px;
+    width: 200px;
+    border: 5px solid black;
+    position: absolute;
+    top: 350px;
+    left: 650px;
+}
+.load
+{
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 315px;
+    left: 710px;
+}
+.inner-bar
+{
+    display: flex;
+    /* position: relative; */
+    animation: slide;
+    animation-duration: 4s;
+    /* animation-timing-function: ease-in ; */
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    /* animation: slide 4s ease-in 0s infinite normal; */
+}
+
+@keyframes slide
+{
+    
+    form
+    {
+        transform: translateX(0px);
+    }
+    to
+    {
+        transform: translateX(130px);
+    }
+
+}
+.bar
+{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    margin-left: 10px;
+    margin-top: 4.8px;
+}

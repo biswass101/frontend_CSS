@@ -1,0 +1,35 @@
+/* display has values --> inline, block, inline-block, none */
+/* block element occupies the full width of the browser and inline element just need the space for content */
+/* div
+{
+    background-color: aqua;
+    display: inline;
+} */
+
+/* Short introduction about display property */
+
+/*
+
+1. inline --> Takes only the space required by the element. (no margin/ padding)
+2. block --> Takes full space available in widht
+3. inline-block --> Similar to inline but we can set margin and padding.
+4. To remove element from document flow
+
+*/
+
+div
+{
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+
+    display: inline-block;
+}
+
+
+#two
+{
+    /* display: none; */ /*nothing will be shown and sizing will be disapear*/
+    visibility: hidden; /*space reserver after hiding it*/
+}

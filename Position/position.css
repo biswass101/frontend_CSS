@@ -1,0 +1,74 @@
+/* 
+-->The position css property sets how an element is positioned in a document
+-->postion propery has values --> static, relative, absolute, fixed, sticky 
+
+1. static: default position(The top, right, botton, left, and z-index properties have no effect)
+            --- we cant change position here
+2. relative: element is relative to itself. (The top, right, bottom, left, and z-index will work)
+            --- by changing position it will move from it's boundary area
+3. absolute: positioned relative to its closest positioned ancestor.
+
+4. fixed: positioned relative to browser. (removed from flow)
+
+5. sticky: positioned based on user's scroll position
+*/
+
+
+/*
+
+
+z-index: It decides the stack level of elements.
+         Overlapping elements with a larger z-index cover those with a smaller one.
+
+
+         z-index: auto(0) --> by default
+         z-index: 1/2/ ... --> higher level(priority wise)
+         z-index: -1/-2/ ... --> lower level(prority wise)
+
+*/
+
+div
+{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#box1
+{
+    position: static;
+    top: 50px; /*Will not take space from document from static position*/
+    bottom: 50px; /*Will not take space from document from static position*/
+}
+
+#box2
+{
+    position: relative;
+    top: 20px;
+    left: 10px;
+    z-index: 1;
+    
+}
+
+#box3
+{
+    position: absolute;
+    top: 500px;
+    left: 20px;
+}
+
+#box4
+{
+    position: fixed;
+    top: 0;
+}
+
+#box5
+{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    
+}

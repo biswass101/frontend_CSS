@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsPaper</title>
+</head>
+<style>
+    .grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-container div {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h1,
+    p {
+        margin-left: 10px;
+    }
+
+    @media screen and (max-width: 576px) {
+        .grid-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <div>
+            <img src="./madrid.jpg" alt="madrid city">
+        </div>
+        <div class="text-div">
+            <h1>Know About Madrid</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium esse cupiditate quo quibusdam ab
+                quam odio quas nostrum nobis totam?</p>
+        </div>
+
+        <div class="text-div venom1">
+            <h1>Know About Manchester</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab placeat temporibus fuga maxime officia
+                repudiandae expedita facere distinctio, architecto dolore.</p>
+        </div>
+        <div class = "vemom2">
+            <img src="./manchester.webp" alt="manchester city">
+        </div>
+
+    </div>
+</body>
+
+</html>

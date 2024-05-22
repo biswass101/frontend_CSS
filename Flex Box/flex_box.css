@@ -1,0 +1,91 @@
+/*
+
+flex: flex is a kind of button that allows to use flex property.
+It sets how flex itmes are placed in the flex container, along which axis and direction.
+flex property given below:
+1. flex-direction: row;(default) //main axis --> row --> all thigs will start from left and end to right
+2. flex-direction: row-reverse; // main axix --> row --> '' '' '' right to left
+3. flex-direction: column; // main axix --> column --> '' '' '' top to bottom
+4. flex-direction: column-reverse;  main axix --> column --> '' '' '' bottom to top
+
+
+
+**flex properties for container
+1. justify-content: alignment along the main axis. (the order of content will not chnage)
+    flex-start / flex-end / center/ space-evenly / space-between / space-around 
+2. flex-wrap: nowrap/ wrap / wrap-reverse
+
+3. align-item: alignment along cross axis.
+
+4. align-content: alignment of space between and space around content
+
+*/
+
+body
+{
+    text-align: center;
+}
+
+div
+{
+    height: 100px;
+    width: 150px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#container
+{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: flex-start;*/ /*row axis left to right and order of the content is default(1, 2, 3, ...) */
+    /*justify-content: flex-end;*/  /*row axis right to left and order of the content is default(1, 2, 3, ...) */
+    /*justify-content: center;*/ /*row axix, center of the right and left positon and the order of the content is
+                                default(1, 2, 3, ...)*/
+    /*justify-content: space-around;*/ /*if space available in cotainer*/
+    /*justify-content: space-between;*/ /*no space at the start and end in the row direction of the container*/
+    justify-content: center; /* same space in row direction */
+
+    /*align-items: center;*/ /*main axis will pass through the all content center and works in cross direction*/
+    /*align-content: center;*/ /*all content will be in center of the container and no extra spcace around all content*/
+    /*align-content: flex-start;*/ /*all content will be in top of the container and no extra spcace around all content*/
+    /*align-content: flex-end;*/ /*all content will be in bottom of the container and no extra spcace around all content*/
+    /* align-items: flex-start;*/ /*spaces genarated in wrapping */
+    /*solving this problem by aligning content to the flex-start*/
+    /* align-content: flex-start; */
+    /*All the things above is same for colum felxing*/
+
+    
+
+}
+#box1
+{
+    background-color: aqua;
+}
+
+#box2
+{
+    background-color: pink;
+    height: 200px;
+    /*align-self: flex-end;*/ /*own line flexing*/
+}
+
+#box3
+{
+    background-color: darkkhaki;
+    height: 70px;
+}
+
+#box4
+{
+    background-color: indianred;
+}
+
+#box5
+{
+    background-color: slateblue;
+    align-self: flex-end; /*align self has highest priority compare to flex container*/
+}

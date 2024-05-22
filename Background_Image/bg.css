@@ -1,0 +1,24 @@
+div
+{
+    display: inline-block;
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+}
+/*
+
+background size property has values --> cover/ contain/ auto
+
+cover --> completly fits with it's div or space area(maybe sometimes not full image for photo and div area size diff.)
+contain --> completly fits with it's div or space area and full image is visible(size will adjusted to it's area
+    automatically)(but image can be repeat that's need to be control by no repeat value)
+
+*/
+#box1
+{
+    background-image: url(./images/bird.jpg);
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+
+    background-size: cover;
+}

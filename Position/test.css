@@ -1,0 +1,49 @@
+div
+{
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+}
+.contain
+{
+    height: 200vh;
+    width: 800px;
+    background-color: gray;
+}
+#one
+{
+    background-color: red;
+    position: static;
+}
+
+#two
+{
+    background-color: green;
+    position: absolute;
+    top: 400px;
+    left: 20px;
+}
+
+#three
+{
+    background-color: blue;
+    position: relative;
+    top: 60px;
+}
+
+#four
+{
+    background-color: black;
+    position: fixed;
+    top: 40px;
+}
+
+#five
+{
+    background-color: aqua;
+    position: sticky;
+    left: 600px;
+    top: 40px
+}

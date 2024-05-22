@@ -1,0 +1,86 @@
+/*
+
+Animation Properties:
+1. animation-name
+2. animation-duraition
+3. animation-timing-function
+4. animation-delay
+5. animation-iteration-count
+6. animation-direction ---> normal, reverse, alternate, alternate-reverse
+
+*/
+
+
+#box1
+{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    animation-name: colorAnimation;
+    animation-duration: 0.25s;
+    /* animation-timing-function: ease-in; */
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+}
+
+#box2
+{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    position: relative;
+    top: 200px;
+    left: 300px;
+    /* animation-name: slide; */
+    /* animation-duration: 2s; */
+    /* animation-timing-function: ease-in; */
+    /* animation-delay: 0s; */
+    /* animation-iteration-count: infinite; */
+    /* border-radius: 50%; */
+    /* animation-direction: normal; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+
+    /*shorthand*/
+    animation: slide 4s ease-in 0s infinite normal;
+}
+@keyframes slide
+{
+    /* from {
+        left: 300px;
+        background-color: yellow;
+    }
+    to {
+        left: 500px;
+        background-color: red;
+        color: white;
+    } */
+
+    0% 
+    {
+        left: 300px;
+        background-color: yellow;
+    }
+    50%
+    {
+        background-color: brown;
+    }
+    100%
+    {
+        left: 800px;
+        background-color: green;
+        color: white;
+        font-size: 25px;
+    }
+}
+@keyframes colorAnimation
+{
+    from {background-color: aquamarine;}
+    to {background-color: red;}
+}

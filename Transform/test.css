@@ -1,0 +1,21 @@
+div
+{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: green;
+    position: absolute;
+    /* transition: all 2s ease-in; */
+    top: 100px;
+    left: 100px;
+    
+}
+
+
+div:hover
+{
+    /* transform: rotate(45deg);*/ /*will rotate*/
+    /* transform: scale(0.5, 1); */ /*scale up to bigger*/
+    /* transform: translate(200px); */ /*will move to right left*/
+    /* transform: translate(100px, 200px);*/ /*will move diagonally*/
+}
